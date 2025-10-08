@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RENT a DENT — Preise</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  
+<header class="container">
+  <div class="logo">
+    <img src="./assets/logo.svg" alt="RENT a DENT" height="36"/>
+    <span>RENT a DENT</span>
+  </div>
+  <nav>
+    <a href="/index.html">Start</a>
+    <a href="/preise.html">Preise</a>
+    <a href="/buchung.html">Buchung</a>
+  </nav>
+  <a class="btn btn-primary" href="/buchung.html">Jetzt buchen</a>
+</header>
+
+  <main class="container section">
+    <h1>Preise</h1>
+    <p class="muted">Transparente Pakete für Labore & Praxen.</p>
+
+    <div class="grid cols-3" style="margin-top:20px">
+      <div id="priceBasis" class="card">
+        <div style="display:flex;align-items:baseline;justify-content:space-between">
+          <h3 style="margin:0">Basis</h3>
+          <span id="priceBasisValue" style="color:var(--accent);font-weight:800;font-size:22px">19€</span>
+        </div>
+        <p class="muted" style="margin:10px 0 16px">Planbare Abholung am nächsten Werktag.</p>
+        <a class="btn btn-primary" href="/buchung.html">Buchen</a>
+      </div>
+
+      <div id="pricePro" class="card emph">
+        <div style="display:flex;align-items:baseline;justify-content:space-between">
+          <h3 style="margin:0">Pro</h3>
+          <span id="priceProValue" style="color:var(--accent);font-weight:800;font-size:22px">39€</span>
+        </div>
+        <p class="muted" style="margin:10px 0 16px">Same‑Day in definierten Zeitfenstern.</p>
+        <a class="btn btn-primary" href="/buchung.html">Jetzt starten</a>
+      </div>
+
+      <div id="priceExpress" class="card">
+        <div style="display:flex;align-items:baseline;justify-content:space-between">
+          <h3 style="margin:0">Express</h3>
+          <span id="priceExpressValue" style="color:var(--accent);font-weight:800;font-size:22px">auf Anfrage</span>
+        </div>
+        <p class="muted" style="margin:10px 0 16px">Sofortfahrt direkt Labor ⇄ Praxis.</p>
+        <a class="btn btn-primary" href="/buchung.html">Anfragen</a>
+      </div>
+    </div>
+  </main>
+  
+<footer class="footer">© <span id="year"></span> RENT a DENT · Impressum · Datenschutz</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script src="./script.js"></script>
+</body>
+</html>

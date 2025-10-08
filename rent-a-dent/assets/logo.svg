@@ -1,0 +1,8 @@
+<svg width="180" height="60" viewBox="0 0 380 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Rent a Dent Logo">
+  <path d="M60 12c9-6 15 2 20 2s11-8 20-2c10 6 17 18 17 33 0 15-6 26-7 38-1 10-4 19-12 19-9 0-11-15-18-15s-9 15-18 15c-8 0-11-9-12-19-1-12-7-23-7-38 0-15 7-27 17-33z"
+        stroke="#7CD7FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M52 62h46" stroke="#7CD7FF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M88 50l18 12-18 12" stroke="#7CD7FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="130" y="55" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#7CD7FF">RENT</text>
+  <text x="130" y="92" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#7CD7FF">a DENT</text>
+</svg>

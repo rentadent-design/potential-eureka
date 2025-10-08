@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RENT a DENT — Buchung</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  
+<header class="container">
+  <div class="logo">
+    <img src="./assets/logo.svg" alt="RENT a DENT" height="36"/>
+    <span>RENT a DENT</span>
+  </div>
+  <nav>
+    <a href="/index.html">Start</a>
+    <a href="/preise.html">Preise</a>
+    <a href="/buchung.html">Buchung</a>
+  </nav>
+  <a class="btn btn-primary" href="/buchung.html">Jetzt buchen</a>
+</header>
+
+  <main class="container section">
+    <h1>Buchung</h1>
+    <p class="muted">Adresse eingeben, Zeitfenster wählen – fertig.</p>
+
+    <form id="bookingForm" style="display:grid;grid-template-columns:1fr;gap:10px;margin-top:16px;max-width:640px">
+      <input id="pickup" placeholder="Abholung (Labor) – Straße, Nr." required />
+      <input id="dropoff" placeholder="Zustellung (Praxis) – Straße, Nr." required />
+      <input id="date" type="date" required />
+      <select id="window">
+        <option>08–12 Uhr</option>
+        <option>12–16 Uhr</option>
+        <option>16–20 Uhr</option>
+      </select>
+      <button id="bookNow" type="submit" class="btn btn-primary">Buchung anfragen</button>
+    </form>
+
+    <p id="result" class="muted" style="margin-top:12px"></p>
+  </main>
+  
+<footer class="footer">© <span id="year"></span> RENT a DENT · Impressum · Datenschutz</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script src="./script.js"></script>
+</body>
+</html>
